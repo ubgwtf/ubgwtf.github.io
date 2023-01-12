@@ -1,0 +1,1 @@
+[{"__type__":"cc.AnimationClip","_name":"revolve","_duration":6,"sample":10,"wrapMode":"2","curveData":{"props":{"angle":[{"frame":0,"value":0},{"frame":6,"value":360}]}}},{"__type__":"cc.SpriteFrame","content":{"name":"light_bg","texture":"30mi21wF9BkKff7N4d5P5z","rect":[1,1,449,449],"offset":[0.5,-0.5],"originalSize":[450,450],"capInsets":[0,0,0,0]}}]
