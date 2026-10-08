@@ -1,83 +1,334 @@
+<!doctype html>
+<html lang="en">
 
-<!DOCTYPE html>
-<html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/logo/unblocked-games-wtf-fav.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Super Jumper - UBGWTF</title>
-  <meta name="description" content="One of the hottest mobile games of all time! Easy to pick up and play. Journey up a sheet of graph paper, perpetually jumping from one platform to the next, avoiding black holes, and blasting baddies with nose balls along the way. Laugh with delight as you blow past other players' actual score markers scribbled in the margins. And be warned: this game is insanely addictive!
-  ">
-  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
-  <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+  <!-- Primary SEO -->
+  <title>Unblocked Games WTF</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ubgwtf.github.io/" />
 
-  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="format-detection" content="telephone=no">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ubgwtf.github.io" />
+  <meta property="og:title" content="Unblocked Games WTF" />
 
-  <!-- force webkit on 360 -->
-  <meta name="renderer" content="webkit"/>
-  <meta name="force-rendering" content="webkit"/>
-  <!-- force edge on IE -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="msapplication-tap-highlight" content="no">
+  <meta property="og:image" content="https://ubgwtf.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://ubgwtf.github.io/" />
 
-  <!-- force full screen on some browser -->
-  <meta name="full-screen" content="yes"/>
-  <meta name="x5-fullscreen" content="true"/>
-  <meta name="360-fullscreen" content="true"/>
-  
-  <!-- force screen orientation on some browser -->
-  <meta name="screen-orientation" content="portrait"/>
-  <meta name="x5-orientation" content="portrait">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Unblocked Games WTF" />
+  <meta name="twitter:image" content="https://ubgwtf.github.io/og-image.png" />
 
-  <!--fix fireball/issues/3568 -->
-  <!--<meta name="browsermode" content="application">-->
-  <meta name="x5-page-mode" content="app">
+  <!-- Performance: Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://img.gamedistribution.com" />
+  <link rel="dns-prefetch" href="https://img.gamedistribution.com" />
+  <link rel="preconnect" href="https://accounts.google.com" />
 
-  <!--<link rel="apple-touch-icon" href=".png" />-->
-  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+  <!-- Google Identity Services (GSI) — required for Google Sign-In -->
+  <script src="https://accounts.google.com/gsi/client?hl=en" async defer></script>
 
-  <link rel="stylesheet" type="text/css" href="style-mobile.css"/>
-  <link rel="icon" href="favicon.ico"/>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889675448259925"
-     crossorigin="anonymous"></script>
+
+  <style id="theme-critical">
+    :root {
+      --idle-bg: #0b170e;
+      --idle-bg-rgb: 11, 23, 14;
+      --idle-surface: #0b170e;
+      --idle-surface-lowest: #09120b;
+      --idle-surface-low: #152018;
+      --idle-surface-container: #1f2a21;
+      --idle-surface-container-high: #2d3730;
+      --idle-surface-highest: #3c453e;
+      --idle-primary: #a3e635;
+      --idle-primary-rgb: 163, 230, 53;
+      --idle-accent: #65a30d;
+      --idle-accent-rgb: 101, 163, 13;
+      --idle-secondary: #4ade80;
+      --idle-secondary-rgb: 74, 222, 128;
+      --idle-text: #f7fee7;
+      --idle-text-muted: #bef264;
+      --idle-outline: #48514a;
+      --idle-glow: rgba(101, 163, 13, 0.4);
+    }
+
+    html,
+    body {
+      background: #0b170e;
+      color: #f7fee7
+    }
+
+    #root {
+      min-height: 100vh;
+      background: #0b170e
+    }
+  </style>
+  <!-- Non-blocking Google Fonts for theme: idle -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    media="print" onload="this.media='all'" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+  </noscript>
+
+
+
+  <script type="module" crossorigin src="/assets/index-upmBJgLI.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-QTnfLwEv.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-DtjKasjq.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-Bws8eAHv.css">
+  <link rel="preload" as="style" href="/assets/index-Bws8eAHv.css" />
 </head>
+
 <body>
-  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
-  <div id="splash">
-    <div class="progress-bar stripes">
-      <span style="width: 0%"></span>
+  <div id="root">
+    <link rel="preload" as="image" href="/images/logo/unblocked-games-wtf-logo-150.png" />
+    <link rel="preload" as="image"
+      href="https://lh3.googleusercontent.com/aida-public/AB6AXuCsaKdaEwVyKkIukCQGbshGuIy5-5axsJFFNTmyYHh09WmujuDjAu_hv-9UPfqsrqlM5P-EMHf-yJrx79zzLaqpLFNk4v6SeppZNkaby30kQFEd2GTQ9G3lIbC1IzZTxg7SJ5USABwUkEQcW-WHYC0H_2RRvYd2v29bJdUDEP3lfjNNG70A8g8hYlxf0vPckInSrfv4o7BibCKhvQrIZQqXH5qhlv3JlcWdfx1FfT9CniZX69gP0mXV9wfKUe999pRylPTmcuByneHo" />
+    <link rel="preload" as="image" href="https://calc247.io/eggycargame/logo.png" />
+    <link rel="preload" as="image" href="https://noi.calc247.io/fireboy-and-watergirl-7:-and-friends/logo.png" />
+    <link rel="preload" as="image" href="https://bit.calc247.io/bitlife/logo.png" />
+    <link rel="preload" as="image" href="https://noi.calc247.io/basketball-stars-2026/logo.png" />
+    <link rel="preload" as="image" href="https://calc247.io/game6/motoroadrash3d/logo.png" />
+    <link rel="preload" as="image" href="https://calc247.io/game6/moto-x3m/logo.png" />
+    <link rel="preload" as="image" href="https://calc247.io/game7/parkour-race/logo.png" />
+    <link rel="preload" as="image" href="https://class.calc247.io/penalty-shooters-3/logo.png" />
+    <link rel="preload" as="image" href="https://calc247.io/game8/retro-bowl/logo.png" />
+    <link rel="preload" as="image" href="https://calc247.io/site-resource/snow-rider-3d.png" />
+    <link rel="preload" as="image" href="https://noi.calc247.io/hockey-taka/logo.png" />
+    <link rel="preload" as="image" href="https://noi.calc247.io/swimmer-rush/logo.png" />
+    <link rel="preload" as="image" href="https://noi.calc247.io/crazy-grand-prix/logo.png" />
+    <link rel="preload" as="image" href="https://noi.calc247.io/funny-city-gopniks/logo.png" />
+    <link rel="preload" as="image" href="https://noi.calc247.io/carnado-stunt-car/logo.png" />
+    <link rel="preload" as="image" href="https://calc247.io/game5/jelly-truck/logo.png" />
+    <div class="min-h-screen flex flex-col bg-background text-on-background">
+      <header
+        class="hidden md:block fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/10 shadow-md">
+        <div class="flex justify-between items-center px-4 md:px-8 h-20 w-full max-w-[1600px] mx-auto"><a
+            class="flex items-center hover:scale-105 transition-all duration-300" aria-label="Go to Home" href="/"
+            data-discover="true"><img src="/images/logo/unblocked-games-wtf-logo-150.png" alt="Unblocked Games WTF"
+              class="h-10 w-auto object-contain block max-w-[200px]" /></a>
+          <nav class="hidden md:flex space-x-6"><a
+              class="text-secondary-container border-b-2 border-secondary-container pb-1 uppercase text-sm tracking-wider font-bold"
+              href="/" data-discover="true">Home</a><a
+              class="text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wider font-bold"
+              href="/c3jwx85" data-discover="true">Car</a><a
+              class="text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wider font-bold"
+              href="/m9todoc" data-discover="true">Action</a><a
+              class="text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wider font-bold"
+              href="/51abmdc" data-discover="true">Shooting</a><a
+              class="text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wider font-bold"
+              href="/sdjudbu" data-discover="true">Sport</a><a
+              class="text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wider font-bold"
+              href="/dnfcoj8" data-discover="true">Idle</a><a
+              class="text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wider font-bold"
+              href="/4qpj7zy" data-discover="true">Skill</a></nav>
+          <div class="relative hidden sm:block">
+            <div class="relative"><input
+                class="bg-surface-container-lowest border border-outline-variant rounded-full py-2 pl-4 pr-10 text-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary-container w-48 transition-all duration-300 focus:w-72 focus:border-secondary-container"
+                placeholder="Search games..." type="text" autoComplete="off" value="" /><span
+                class="material-symbols-outlined absolute right-3 top-2 text-on-surface-variant text-sm">search</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex-1 flex flex-col pt-20">
+        <nav
+          class="md:hidden fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-2 bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-md h-16">
+          <div class="flex items-center gap-2"><button
+              class="text-primary hover:bg-white/5 transition-all duration-200 p-2 rounded-full active:scale-95"><span
+                class="material-symbols-outlined">menu</span></button><a
+              class="font-headline-lg-mobile text-xl font-black tracking-tighter text-primary-container drop-shadow-[0_0_10px_rgba(189,0,255,0.4)] uppercase"
+              href="/" data-discover="true">Unblocked Games WTF</a></div>
+          <div class="flex items-center gap-2 text-primary"><button
+              class="hover:bg-white/5 transition-all duration-200 p-2 rounded-full active:scale-95"><span
+                class="material-symbols-outlined">search</span></button><button
+              class="hover:bg-white/5 transition-all duration-200 p-2 rounded-full active:scale-95 hidden sm:block"><span
+                class="material-symbols-outlined">notifications</span></button><img alt="User Profile Avatar"
+              class="w-8 h-8 rounded-full border border-primary-container object-cover ml-1"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsaKdaEwVyKkIukCQGbshGuIy5-5axsJFFNTmyYHh09WmujuDjAu_hv-9UPfqsrqlM5P-EMHf-yJrx79zzLaqpLFNk4v6SeppZNkaby30kQFEd2GTQ9G3lIbC1IzZTxg7SJ5USABwUkEQcW-WHYC0H_2RRvYd2v29bJdUDEP3lfjNNG70A8g8hYlxf0vPckInSrfv4o7BibCKhvQrIZQqXH5qhlv3JlcWdfx1FfT9CniZX69gP0mXV9wfKUe999pRylPTmcuByneHo" />
+          </div>
+        </nav>
+        <nav
+          class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-surface-container-low/90 backdrop-blur-md rounded-t-xl shadow-[0_-4px_20px_rgba(0,0,0,0.5)] border-t border-white/10 font-label-caps text-label-caps pb-safe">
+          <a class="flex flex-col items-center justify-center text-secondary-container drop-shadow-[0_0_8px_rgba(0,238,252,0.6)] w-1/4 h-full active:scale-90 transition-transform"
+            href="/" data-discover="true"><span class="material-symbols-outlined mb-1"
+              style="font-variation-settings:&#x27;FILL&#x27; 1">play_circle</span><span
+              class="text-[10px]">Play</span></a><a
+            class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary w-1/4 h-full active:scale-90 transition-transform"
+            href="/" data-discover="true"><span class="material-symbols-outlined mb-1">group</span><span
+              class="text-[10px]">Social</span></a><a
+            class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary w-1/4 h-full active:scale-90 transition-transform"
+            href="/" data-discover="true"><span class="material-symbols-outlined mb-1">shopping_cart</span><span
+              class="text-[10px]">Store</span></a><a
+            class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary w-1/4 h-full active:scale-90 transition-transform"
+            href="/" data-discover="true"><span class="material-symbols-outlined mb-1">person</span><span
+              class="text-[10px]">Profile</span></a></nav>
+        <main class="flex-grow pt-24 pb-24 md:pb-12 px-4 md:px-8 max-w-7xl mx-auto w-full">
+          <div class="mb-8">
+            <div class="text-sm text-primary mb-2 flex items-center space-x-2"><a class="hover:underline"
+                href="/">Games</a><span>»</span><span class="text-on-surface">Unblocked Games WTF</span></div>
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+              <div class="max-w-3xl">
+                <h1 class="text-4xl font-extrabold text-on-surface mb-3 tracking-tight uppercase">Top Unblocked Games
+                  WTF 2026</h1>
+                <p class="text-on-surface-variant text-base">Play Best Unblocked Games WTF</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"><a
+              class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/c3jwx85/aoc359i" data-discover="true"><img alt="Eggy Car Game" class="w-full h-full object-cover"
+                src="https://calc247.io/eggycargame/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Eggy Car Game</h3><span
+                  class="text-custom-accent text-xs">car</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/jog3qih/3tddgb5" data-discover="true"><img alt="Fireboy &amp; Watergirl 7: and Friends"
+                class="w-full h-full object-cover"
+                src="https://noi.calc247.io/fireboy-and-watergirl-7:-and-friends/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Fireboy &amp; Watergirl 7: and Friends</h3><span
+                  class="text-custom-accent text-xs">Fireboy-and-watergirl</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/ltw4pyp/6kwwill" data-discover="true"><img alt="Bitlife" class="w-full h-full object-cover"
+                src="https://bit.calc247.io/bitlife/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Bitlife</h3><span
+                  class="text-custom-accent text-xs">Simulator</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/53v8oa9/k1svqds" data-discover="true"><img alt="Basketball Stars 2026"
+                class="w-full h-full object-cover" src="https://noi.calc247.io/basketball-stars-2026/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Basketball Stars 2026</h3><span
+                  class="text-custom-accent text-xs">Basketball</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/c3jwx85/wk2eox9" data-discover="true"><img alt="Moto Road Rash 3D"
+                class="w-full h-full object-cover" src="https://calc247.io/game6/motoroadrash3d/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Moto Road Rash 3D</h3><span
+                  class="text-custom-accent text-xs">Car</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/vce0ndv/mf8xw1a" data-discover="true"><img alt="Moto x3m" class="w-full h-full object-cover"
+                src="https://calc247.io/game6/moto-x3m/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Moto x3m</h3><span
+                  class="text-custom-accent text-xs">moto-x3m</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/4qpj7zy/lwdj8d0" data-discover="true"><img alt="Parkour Race" class="w-full h-full object-cover"
+                src="https://calc247.io/game7/parkour-race/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Parkour Race</h3><span
+                  class="text-custom-accent text-xs">Skill</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/sdjudbu/xbn6mdi" data-discover="true"><img alt="Penalty Shooters 3"
+                class="w-full h-full object-cover" src="https://class.calc247.io/penalty-shooters-3/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Penalty Shooters 3</h3><span
+                  class="text-custom-accent text-xs">Sport</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/sdjudbu/03umvo1" data-discover="true"><img alt="Retro Bowl" class="w-full h-full object-cover"
+                src="https://calc247.io/game8/retro-bowl/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Retro Bowl</h3><span
+                  class="text-custom-accent text-xs">Sport</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/opf6zrb/d1d2vfb" data-discover="true"><img alt="Snow Rider 3D" class="w-full h-full object-cover"
+                src="https://calc247.io/site-resource/snow-rider-3d.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Snow Rider 3D</h3><span
+                  class="text-custom-accent text-xs">Snow-rider-3d</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/sdjudbu/lkjdtug" data-discover="true"><img alt="Hockey Taka" class="w-full h-full object-cover"
+                src="https://noi.calc247.io/hockey-taka/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Hockey Taka</h3><span
+                  class="text-custom-accent text-xs">Sport</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/jdedusw/pb326ko" data-discover="true"><img alt="Swimmer Rush" class="w-full h-full object-cover"
+                src="https://noi.calc247.io/swimmer-rush/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Swimmer Rush</h3><span
+                  class="text-custom-accent text-xs">Arcade</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/c3jwx85/qo3f6ue" data-discover="true"><img alt="Crazy Grand Prix"
+                class="w-full h-full object-cover" src="https://noi.calc247.io/crazy-grand-prix/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Crazy Grand Prix</h3><span
+                  class="text-custom-accent text-xs">Car</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/m9todoc/qmy595e" data-discover="true"><img alt="Funny City: Gopniks"
+                class="w-full h-full object-cover" src="https://noi.calc247.io/funny-city-gopniks/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Funny City: Gopniks</h3><span
+                  class="text-custom-accent text-xs">Action</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/c3jwx85/ocz73wr" data-discover="true"><img alt="Carnado Stunt Car"
+                class="w-full h-full object-cover" src="https://noi.calc247.io/carnado-stunt-car/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Carnado Stunt Car</h3><span
+                  class="text-custom-accent text-xs">Car</span>
+              </div>
+            </a><a class="game-card relative block rounded-md overflow-hidden aspect-[4/3] bg-surface-container"
+              href="/c3jwx85/vvnxfso" data-discover="true"><img alt="Jelly truck" class="w-full h-full object-cover"
+                src="https://calc247.io/game5/jelly-truck/logo.png" />
+              <div class="overlay absolute inset-0 flex flex-col justify-end p-3">
+                <h3 class="text-white font-bold text-sm truncate">Jelly truck</h3><span
+                  class="text-custom-accent text-xs">Car</span>
+              </div>
+            </a></div>
+          <div class="mt-12 flex justify-center"><button
+              class="px-8 py-3 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container font-bold rounded-full transition-colors duration-200 border border-white/10 hover:border-transparent shadow-md active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed">Load
+              More Games</button></div>
+        </main>
+      </div>
+      <footer class="bg-surface-container-lowest border-t border-white/5 py-12 mt-auto">
+        <div class="flex flex-col items-center gap-6 px-4 md:px-8 w-full max-w-[1600px] mx-auto">
+          <div class="font-bold text-xl text-tertiary tracking-widest uppercase">Unblocked Games WTF</div>
+          <p class="text-on-surface-variant text-sm text-center max-w-md">For Fun</p>
+          <div class="flex flex-wrap justify-center gap-6"></div>
+          <div class="text-secondary text-sm mt-4 text-center">ubgwtf.github.io. All rights reserved.</div>
+        </div>
+      </footer>
     </div>
   </div>
 
-<script src="src/settings.js" charset="utf-8"></script>
-
-<script src="main.js" charset="utf-8"></script>
-
-<script type="text/javascript">
-(function () {
-    // open web debugger console
-    if (typeof VConsole !== 'undefined') {
-        window.vConsole = new VConsole();
+  <script>
+    if ('serviceWorker' in navigator && '%VITE_ENABLE_SW%' === 'true') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .catch(() => { /* sw.js only exists in dist/, not in dev mode */ })
+      })
     }
+  </script>
 
-    var splash = document.getElementById('splash');
-    splash.style.display = 'block';
-
-    var cocos2d = document.createElement('script');
-    cocos2d.async = true;
-    cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js';
-
-    var engineLoaded = function () {
-        document.body.removeChild(cocos2d);
-        cocos2d.removeEventListener('load', engineLoaded, false);
-        window.boot();
-    };
-    cocos2d.addEventListener('load', engineLoaded, false);
-    document.body.appendChild(cocos2d);
-})();
-</script>
 </body>
+
 </html>

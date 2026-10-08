@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Moto X3M",
+    "slug": "moto-x3m",
+    "category": "Bike Racing",
+    "imageUrl": "https://img.gamedistribution.com/b4ae0f9f3b3e48939b28bb9c4a56b71e-512x512.jpeg",
+    "imageAltText": "A motocross bike performing a daring mid-air flip over a massive ramp obstacle course. Vivid blue sky and bright lighting.",
+    "badge": "TOP"
+  },
+  {
+    "title": "Burnout Drift",
+    "slug": "burnout-drift",
+    "category": "Drift Racing",
+    "imageUrl": "https://img.gamedistribution.com/3d7c6deabe82431383b9bd27cbaef99b-512x512.jpeg",
+    "imageAltText": "A neon-lit muscle car tearing around a corner with massive tire smoke. Night time city setting with glowing street lights.",
+    "badge": "NEW"
+  },
+  {
+    "title": "Road Fury",
+    "slug": "road-fury",
+    "category": "Action Racing",
+    "imageUrl": "https://img.gamedistribution.com/1ca00db08e7f4b3b9d6e81e3b4ef1234-512x512.jpeg",
+    "imageAltText": "Top-down view of a heavily armed car blasting through enemy vehicles on a desert highway. Explosive action and chaos.",
+    "badge": null
+  },
+  {
+    "title": "Drift Hunters",
+    "slug": "drift-hunters",
+    "category": "Drift Racing",
+    "imageUrl": "https://img.gamedistribution.com/a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7-512x512.jpeg",
+    "imageAltText": "A modified sports car drifting sideways through a mountain pass at sunset. Realistic tire smoke and orange light.",
+    "badge": "TRENDING"
+  },
+  {
+    "title": "Offroad Outlaws",
+    "slug": "offroad-outlaws",
+    "category": "Off-Road",
+    "imageUrl": "https://img.gamedistribution.com/b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6-512x512.jpeg",
+    "imageAltText": "A lifted 4x4 truck conquering massive muddy terrain with deep ruts. Dirt flying everywhere, rugged wilderness background.",
+    "badge": null
+  },
+  {
+    "title": "Highway Racer 3D",
+    "slug": "highway-racer-3d",
+    "category": "Arcade Racing",
+    "imageUrl": "https://img.gamedistribution.com/f1e2d3c4b5a6f7e8d9c0b1a2f3e4d5c6-512x512.jpeg",
+    "imageAltText": "First person view from a sports car weaving through heavy highway traffic at breakneck speed. Motion blur and city lights.",
+    "badge": null
+  },
+  {
+    "title": "Stunt Car Extreme",
+    "slug": "stunt-car-extreme",
+    "category": "Stunt",
+    "imageUrl": "https://img.gamedistribution.com/a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4-512x512.jpeg",
+    "imageAltText": "A souped-up stunt car launching off a mega ramp high into the sky. Aerial view with a sprawling city below.",
+    "badge": "NEW"
+  },
+  {
+    "title": "Car Rush",
+    "slug": "car-rush",
+    "category": "Casual Racing",
+    "imageUrl": "https://img.gamedistribution.com/c5e7b2944f6e4b8db3b92b36d1c3e456-512x512.jpeg",
+    "imageAltText": "Colorful cartoon cars zooming down a bright colorful track. Fun arcade aesthetic with vibrant colors and simple shapes.",
+    "badge": null
+  }
+]
